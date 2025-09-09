@@ -7,7 +7,7 @@
     }
     const sum  = () =>{
         var {a,b} = loadval();
-        document.getElementById("result").innerText =(`sum is ${a+b}`);
+        document.getElementById("result").innerText = "Sum = " +(a+b);
     }
     const diff = () =>{
          var { a, b } = loadval();
@@ -17,10 +17,13 @@
 
    const mul = () =>{
      var{a,b} = loadval();
-    
-
+        document.getElementById("result").innerText = "Multiplication = " + (a * b);
    }
     
+    const div = () =>{
+        var { a, b } = loadval();
+        document.getElementById("result").innerText = "Division = " + (a / b);
+    }
 
     function load() {
         alert("The page is loaded");
